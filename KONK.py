@@ -22,7 +22,7 @@ class Game:
         self.enemies = [
             Character("Ikemefuna", 50, 10),
             Character("Nwoye", 40, 8),
-            Character("Colonial Soldier", 80, 15)
+            Character("Colonial Soldier", 200, 15)
         ]
         self.symbols = {
             "Yams": "Yams symbolize wealth, masculinity, and the importance of agriculture in Igbo culture. They represent Okonkwo's success and his fear of failure.",
