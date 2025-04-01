@@ -70,10 +70,10 @@ class Game:
 
     def conclusion(self):
         print("As you reflect on your journey as Okonkwo, consider the following themes:")
-        print("1. **Tradition vs. Change**: Okonkwo's struggle against the changes brought by colonialism highlights the tension between maintaining cultural identity and adapting to new realities.")
-        print("2. **Masculinity and Pride**: Okonkwo's fear of being perceived as weak drives many of his actions, ultimately leading to his downfall. This reflects the societal pressures surrounding masculinity.")
-        print("3. **The Impact of Colonialism**: The arrival of the missionaries and colonial forces disrupts the Igbo way of life, symbolized by the locusts that consume everything in their path.")
-        print("4. **Tragedy and Fate**: Okonkwo's tragic end serves as a reminder of the consequences of pride and the inability to adapt to change.")
+        print("1. Tradition vs. Change: Okonkwo's struggle against the changes brought by colonialism highlights the tension between maintaining cultural identity and adapting to new realities.")
+        print("2. Masculinity and Pride: Okonkwo's fear of being perceived as weak drives many of his actions, ultimately leading to his downfall. This reflects the societal pressures surrounding masculinity.")
+        print("3. The Impact of Colonialism: The arrival of the missionaries and colonial forces disrupts the Igbo way of life, symbolized by the locusts that consume everything in their path.")
+        print("4. Tragedy and Fate: Okonkwo's tragic end serves as a reminder of the consequences of pride and the inability to adapt to change.")
         print("\nThank you for playing! Remember, the struggle of the Igbo people continues, and their story is one of resilience and strength.")
 
     def start_game(self):
@@ -84,6 +84,7 @@ class Game:
             self.battle(enemy)
             if not self.okonkwo.is_alive():
                 print("Game Over! You have failed to uphold your legacy.")
+                self.conclusion()
                 return
 
         print("Congratulations! You have fought bravely against the challenges.")
